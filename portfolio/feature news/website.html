@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Report Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease; 
+    }
+
+    img:hover {
+      transform: scale(1.1); 
+    }
+
+    h1 {
+      font-style: italic;
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .author {
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .bigger {
+      background-color: #3498db;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    .smaller {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .scroll-to-top {
+      background-color: #2ecc71;
+      color: #fff;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    #fullscreen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 9999;
+            cursor: pointer; 
+     }  
+
+     footer {
+        background-color: lightgray;
+    }
+
+  </style>
+</head>
+
+<body>
+  
+    <header>
+        <h1>Lost in a Time Tunnel: The Retro Film Camera Shop in Tsim Sha Tsui </h1>
+        <div class="buttons">
+          <button class="bigger" onclick="changeFontSize('bigger')">Enlarge the Font</button>
+          <button class="smaller" onclick="changeFontSize('smaller')">Shrink the Font</button>
+        </div>
+    </header>
+
+    <article>
+        <a>
+            <img src="https://www.funtime.com.tw/blog/wp-content/uploads/2019/06/image-1-700x420.jpg" alt="News Image">
+        </a>
+        <h1></h1>
+        <p>"Time Fly Slow with Film" is a film camera grocery store located in Tsim Sha Tsui, Hong Kong. Its pursuit of retro film cameras and unique business methods attract many young people to come to take photos and shop. In the fashionable and innovative Hong Kong, this small store has left memories of Hong Kong's 1990s.</p>
+    </article>
+
+    <article>
+        <a>
+            <img src="images\娃娃.jpg" alt="News Image">
+        </a>
+        <h1>“We wanted to make it easy on ourselves and opened at random times.”</h1>
+        <p> "We hope customers will experience this process slowly. Instead of getting photos quickly, if that's the case, why not just use a digital phone to take photos?" the boss said.This unique shop possesses two exceptional features that add an artistic and mysterious touch. Firstly, its opening hours are uncertain, and the latest business hours are updated daily on Instagram. This element of uncertainty creates anticipation and a sense of mystery for customers, while also fostering interaction and engagement. Secondly, even when the shop is not open, customers can still deposit their film rolls for development in the mailbox located at the shop's entrance. The owner personally handles these film rolls and meticulously develops them. This arrangement not only meets customers' needs but also showcases the owner's care and attentive service. This distinctive approach provides convenience and a special experience for customers, further strengthening the trust and connection between the shop and its clientele.</p>
+    </article>
+
+    <article>
+        <a>
+            <img src="images\邮箱.jpg" alt="News Image">
+        </a>
+        <h1>“I'm a nostalgic person and these dolls are all outdated dolls from my childhood collection.”</h1>
+        <p>This vintage film camera store is like stepping into a time portal. The nostalgic ambience neatly arranged vintage dolls, and adorned walls with black and white photographs create a captivating atmosphere. Rows of vintage cameras add to the charm, while gentle melodies infuse a romantic mood. Visitors can not only purchase cameras and supplies but also experience the allure of photographic art and evoke a sense of nostalgia.</p>
+        <p>“I provide all services related to film cameras here,” the shop owner said.In this enchanting vintage film camera store, the shop owner offers a range of captivating services for both photography enthusiasts and nostalgic seekers. Whether you are a budding beginner or an experienced photographer, this place caters to your needs. The shop knows how to capture the beauty of every moment and presents them before your eyes with exquisite craftsmanship. Whether in black and white or vibrant colours, every photograph is treated with delicacy and treasured as a piece of art. For those who cherish vintage photography, this store provides a diverse selection of film cameras and rolls. Here, you can find fascinating old-fashioned cameras with silver exteriors and worn leather covers that exude the marks of time and unique charm. And the colourful film rolls will infuse your photographs with a rich vintage atmosphere. Additionally, the shop owner offers instant photography services with Polaroid cameras, allowing you to capture and share beautiful moments in an instant. These classic Polaroid cameras not only capture every detail but also instantly print them on paper, making memories feel real and within reach.</p>
+      </article>
+
+    <article>
+        <a>
+            <img src="images\工具工作.jpg" alt="News Image">
+        </a>
+        <h1>“Developing film is not difficult, but few people know how to do it these days.”</h1>
+        <a>
+          <img src="images\店主工作照片.jpg" alt="News Image">
+        </a>
+        <p>Time and film slowly pass by, but the memories of those moments when time seemed to move at a leisurely pace remain vivid. The shop owner of this enchanting vintage film camera store is a tall, slender young man with a pair of round glasses that give him a warm and approachable demeanour. He exudes a strong artistic aura, resembling a cultured and literary individual. His attire is simple yet tasteful, often seen wearing fitted shirts and finely tailored suits, complemented by fashionable accessories that showcase his attention to detail and unique sense of style. However, his charm extends beyond his appearance. He possesses a profound understanding of photography, art, and culture, and he enjoys sharing photography stories and techniques with customers. His expertise and enthusiasm make him a trusted guide and mentor for customers. The presence of this young shop owner adds a special allure to the store, attracting photography enthusiasts and nostalgic seekers who come to explore and experience the magical world of photography.</p>
+       
+    </article>
+
+    <article>
+      <a>
+          <img src="images\店内明珠.png" alt="News Image">
+          <img src="images/明珠合照.png" alt="News Image">
+      </a>
+      <h1>“I can't imagine that cultural inheritance is actually happening to me.”</h1>
+      <p>During the interview, the owner told me why he chose this career.In the store, there is a sign that reads "Ming Zhu Photography Studio," a long-closed old photo lab that reveals the backstory behind the owner's choice of profession. "This couple is really good to me, and also taught me a lot of skills. I also imagine that they like the industry that they like most." The owner said.Ming Zhu Studio was the place where the owner's journey in photography began. “I still remember when I used to walk through the city centre after school, even if I didn't go in to develop my film, sometimes I would stroll into Ming Zhu's shop and peer into the glass display cabinet to see what cameras they had or pay my respects at the entrance.”“Ming Zhu Digital Photography Lab. When news of their retirement broke, many residents of Tuen Mun came online to share their memories. Despite its humble appearance, I asked them to let me preserve their sign. I thought that since this place held meaning for so many of our neighbours, even if they decided not to continue operating, we should preserve some traces of its existence. To carry on this legacy of dedication and professionalism.”</p>
+    </article>
+
+    <article>
+      <h1>“If you take a picture with your phone, it's fast and cheap. But every time you press the shutter in the film camera, it becomes cautious and conscientious.”</h1>
+      <a>
+        <img src="images\顾客照片.jpg" alt="News Image">
+    </a>
+      <p>Even though the photo quality of smartphones and digital cameras is already quite impressive, most of the customers who come here are young people. Cheery, a female college student, is a loyal customer of this store. She came today to develop film and bought another film camera."If I take photos with my phone, it's quick and cheap, which makes me more casual with each shutter press." Film rolls for film cameras can be quite expensive, so every time you use it to take photos, the photographer needs to be cautious to avoid wasting film. This way, every time you see the final developed photos, it carries the memory of that moment, rather than just being one of the thousands of photos in your phone's gallery.</p>
+    </article>
+
+
+
+    <p>The store owner said that he will hold some teaching activities on the use of film cameras and some salon activities for photography enthusiasts in the future. Let more people like this culture.</p>
+
+    <article>
+      <h1>This store is located next to Chungking Mansion in Tsim Sha Tsui, Hong Kong. The map is as follows.</h1>
+  </article>
+  
+    <a>
+      <img src="images\地图.jpg" alt="News Image">
+    </a>
+
+
+    <script>
+        let fontSize = 14;
+
+        function changeFontSize(buttonType) {
+        const paragraphElements = document.querySelectorAll('p');
+        if (buttonType === 'bigger') {
+            fontSize += 2;
+        } else if (buttonType === 'smaller') {
+            fontSize -= 2;
+        }
+
+        paragraphElements.forEach(paragraph => {
+            paragraph.style.fontSize = `${fontSize}px`;
+        });
+        }
+
+        function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onload = function () {
+            var fullscreenImage = document.getElementById('fullscreen-image');
+
+        fullscreenImage.addEventListener('click', function () {
+                fullscreenImage.style.display = 'none';
+            });
+        };
+     </script>
+</body>
+</html>
+
+
+
+
+
+
